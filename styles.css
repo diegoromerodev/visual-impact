@@ -1,0 +1,146 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#main-menu {
+    background: #656565;
+    padding: 50px 20px;
+}
+
+#sub-menu {
+    background: #acacac;
+    padding: 30px 10px;
+}
+
+#showcase {
+    display: flex;
+
+}
+
+#showcase section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    display: flex;
+    height : 100%;
+    padding: 20px 30px;
+    align-items : flex-end;
+}
+
+.article.big {
+    font-size: 1.5em;
+}
+
+.article > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article h2 {
+    font-size: 2.5em;
+}
+
+.rotate_img {
+    transition: all 0.5s ease;
+    transform: rotate(-15deg);
+    transform-origin: left bottom;
+    border: 4px solid #acacac;
+    height: 6em;
+    width: 6em;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.rotate_img:hover {
+    transform: rotate(0);
+}
+
+.rotate_img img {
+    border-radius: 10px;
+}
+
+.rotate_big {
+    margin-left: 15px;
+}
+
+
+.sign-up {
+    font-size: 2em;
+    flex: 1;
+}
+
+/* SQUARES */
+.squares {
+    display: flex;
+    justify-content: center;
+}
+
+.squares div {
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background: #656565;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.squares button {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.squares h2 {
+    font-size: 2rem;
+}
+
+.squares p {
+    font-size: 1.5em;
+}
+
+/* MULTI SECTION */
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.articles-grid article {
+    display: flex;
+    font-size: 1.2em;
+    padding: 20px
+}
+
+.rotate_small {
+    overflow: hidden;
+    flex-shrink: 0;
+    font-size: 0.6em;
+    margin-top: 30px;
+}
+
+
+.rotate_small img {
+    height: 6em;
+    width: 6em;
+}
+
+.articles-grid p {
+    line-height: 2em;
+}
